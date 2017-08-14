@@ -1,0 +1,20 @@
+.app-header{
+	box-sizing: border-box;
+	background: black;
+	height: 44px;
+	border: solid black 1px;
+	text-align: center;
+}
+
+.mobile-logo{
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 14px;
+}
+
+.menu-icon{
+	position: absolute;
+	right: 20px;
+	top: 14px;
+	cursor: pointer;
+}
