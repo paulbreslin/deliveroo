@@ -1,0 +1,44 @@
+.hero-banner{
+	background: url('../../assets/bg.jpg');
+	background-size: cover;
+	color: white;
+	text-align: center;
+	position: relative;
+	border-top: solid black 1px;
+	padding: 50px 0;
+}
+
+.hero-banner:before,
+.hero-banner::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: rgba(0,0,0,0.6);
+}
+
+.hero-text{
+	position: relative;
+	z-index: 20;
+}
+
+.restaurants-number{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ccc;
+	font-size: 0.8rem;
+}
+
+.location-name{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.location-description{
+	line-height: 1.5rem;
+	padding: 0 40px;
+	font-size: 0.9rem;
+}

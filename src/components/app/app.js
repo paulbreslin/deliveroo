@@ -1,13 +1,13 @@
 import React from 'react';
 
 import AppHeader from '../appHeader/appHeader';
-import NeighbourhoodViewContainer from '../../containers/neighbourhoodViewContainer';
+import NeighbourhoodView from '../neighbourhoodView/neighbourhoodView';
 
 const App = () => {
 	return(
 		<div>
 			<AppHeader />
-			<NeighbourhoodViewContainer />
+			<NeighbourhoodView />
 		</div>
 	)
 }
