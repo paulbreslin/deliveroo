@@ -9,7 +9,24 @@ class NeighbourhoodView extends Component {
 		this.state = {
 			locationName: 'Hampstead',
 			locationDescription: `Hampstead is a great place to while away a whole day. As well as three of London's biggest and best museums, there're plenty of other things to do that are sure to entertain and amuse everyone in your group.`,
-			numberOfRestaurants: 34
+			numberOfRestaurants: 34,
+			restaurantsList: [{
+				name: 'Bobo Social',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Tsunami',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Wild Game Co',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Bobo Social',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}]
 		};
 	}
 
@@ -17,7 +34,8 @@ class NeighbourhoodView extends Component {
 		const {
 			locationName,
 			locationDescription,
-			numberOfRestaurants
+			numberOfRestaurants,
+			restaurantsList
 		} = this.state;
 		return(
 			<div>
@@ -25,7 +43,7 @@ class NeighbourhoodView extends Component {
 					locationName={locationName}
 					locationDescription={locationDescription}
 					numberOfRestaurants={numberOfRestaurants} />
-				<RestaurantsList />
+				<RestaurantsList restaurantsList={JSON.stringify(restaurantsList)} />
 			</div>
 		)
 	}

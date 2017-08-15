@@ -1,0 +1,40 @@
+.restaurants-list{
+
+}
+
+.restaurant-item{
+	border-top: solid #E5E5E5 1px;
+	position: relative;
+	height: 80px;
+}
+
+.restaurant-name{
+	font-size: 1.2rem;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+
+.restaurant-info{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	padding-right: 30px;
+	transform: translateY(-50%);
+	text-align: right;
+	color: #9B9B9B;
+	font-size: 0.9rem;
+}
+
+.restaurant-info img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+.restaurant-minutes{
+	display: block;
+	padding: 3px 0;
+}
