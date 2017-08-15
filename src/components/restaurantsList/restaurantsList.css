@@ -1,5 +1,6 @@
-.restaurants-list{
-
+.restaurants-inner{
+	max-width: 1130px;
+	margin: 0 auto;
 }
 
 .restaurant-item{
@@ -34,7 +35,43 @@
 	right: 0;
 }
 
-.restaurant-minutes{
+.restaurant-price{
+	display: none;
+}
+
+.restaurant-type{
 	display: block;
 	padding: 3px 0;
+}
+
+@media (min-width: 767px) {
+	.restaurants-inner{
+		margin-top: 50px;
+		padding: 0 20px;
+	}
+
+	.restaurant-name{
+		left: 0;
+	}
+
+	.restaurant-info{
+		font-size: 1.2rem;
+		right: 0;
+		padding-right: 0;
+	}
+
+	.restaurant-info img{
+		display: none;
+	}
+
+	.restaurant-price,
+	.restaurant-minutes,
+	.restaurant-type{
+		display: inline-block;
+	}
+
+	.restaurant-price,
+	.restaurant-type{
+		padding: 0 35px;
+	}
 }

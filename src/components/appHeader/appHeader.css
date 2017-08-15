@@ -12,10 +12,13 @@
 	max-height: 500px;
 }
 
-.mobile-logo{
+.logo{
 	display: inline-block;
-	margin: 0 auto;
-	margin-top: 14px;
+	margin: 14px auto 0;
+}
+
+.large-logo{
+	display: none;
 }
 
 .menu-icon{
@@ -37,8 +40,64 @@
 	display: block;
 	text-decoration: none;
 	padding: 10px 0;
+	letter-spacing: 1px;
 }
 
 .app-nav a:hover{
 	color: #ccc;
+}
+
+@media (min-width: 767px) {
+	.app-header{
+		transition: none;
+		background: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 20;
+		border: 0;
+		height: 120px;
+		max-height: 120px;
+	}
+
+	.inner-header{
+		max-width: 1130px;
+		margin: 0 auto;
+		position: relative;
+		height: 100%;
+	}
+
+	.menu-icon{
+		display: none;
+	}
+
+	.logo{
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+		margin: 0;
+	}
+
+	.large-logo{
+		display: inline-block;
+	}
+
+	.small-logo{
+		display: none;
+	}
+
+	.app-nav{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		margin: 0;
+	}
+
+	.app-nav a{
+		display: inline-block;
+		padding: 0 20px;
+	}
 }

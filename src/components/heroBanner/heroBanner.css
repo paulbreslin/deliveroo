@@ -23,6 +23,8 @@
 .hero-text{
 	position: relative;
 	z-index: 20;
+	margin: 0 auto;
+	max-width: 550px
 }
 
 .restaurants-number{
@@ -41,4 +43,10 @@
 	line-height: 1.5rem;
 	padding: 0 40px;
 	font-size: 0.9rem;
+}
+
+@media (min-width: 767px) {
+	.hero-banner{
+		padding: 120px 0 60px;
+	}
 }

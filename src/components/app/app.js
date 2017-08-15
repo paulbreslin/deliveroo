@@ -8,6 +8,7 @@ const App = () => {
 		<div>
 			<AppHeader />
 			<NeighbourhoodView />
+			{/* Would typically replace "NeighbourhoodView" with view from router */}
 		</div>
 	)
 }

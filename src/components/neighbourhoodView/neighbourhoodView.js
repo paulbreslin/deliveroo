@@ -28,6 +28,7 @@ class NeighbourhoodView extends Component {
 				type: 'Vietnamese'
 			}]
 		};
+		// Would typically retrieve above data via API endpoint
 	}
 
 	render() {

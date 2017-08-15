@@ -11,8 +11,9 @@ const RestaurantsList = ({restaurantsList}) => {
 			<div className="restaurant-item">
 				<span className="restaurant-name">{restaurant.name}</span>
 				<div className="restaurant-info">
+					<span className="restaurant-type">{restaurant.type}</span>
+					<span className="restaurant-price">&pound;&pound;</span>
 					<span className="restaurant-minutes">{restaurant.estimatedTime} minutes</span>
-					<span>{restaurant.type}</span>
 					<img src={caretImg} alt=""/>
 				</div>
 			</div>
@@ -20,7 +21,9 @@ const RestaurantsList = ({restaurantsList}) => {
 	});
 	return(
 		<div className="restaurants-list">
-			{restaurantElement}
+			<div className="restaurants-inner">
+				{restaurantElement}
+			</div>
 		</div>
 	)
 }
