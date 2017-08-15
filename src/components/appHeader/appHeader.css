@@ -1,9 +1,15 @@
 .app-header{
+	transition: all .4s;
 	box-sizing: border-box;
 	background: black;
-	height: 44px;
+	max-height: 44px;
 	border: solid black 1px;
 	text-align: center;
+	overflow: hidden;
+}
+
+.app-header.show-mobile{
+	max-height: 500px;
 }
 
 .mobile-logo{
@@ -13,8 +19,26 @@
 }
 
 .menu-icon{
+	box-sizing: border-box;
 	position: absolute;
-	right: 20px;
-	top: 14px;
+	right: 0;
+	top: 0;
 	cursor: pointer;
+	padding: 15px 20px;
+}
+
+.app-nav{
+	margin: 10px 0;
+}
+
+.app-nav a{
+	text-transform: uppercase;
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 10px 0;
+}
+
+.app-nav a:hover{
+	color: #ccc;
 }
