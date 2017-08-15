@@ -26,6 +26,22 @@ class NeighbourhoodView extends Component {
 				name: 'Bobo Social',
 				estimatedTime: 30,
 				type: 'Vietnamese'
+			}, {
+				name: 'Bobo Social',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Tsunami',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Wild Game Co',
+				estimatedTime: 30,
+				type: 'Vietnamese'
+			}, {
+				name: 'Bobo Social',
+				estimatedTime: 30,
+				type: 'Vietnamese'
 			}]
 		};
 		// Would typically retrieve above data via API endpoint

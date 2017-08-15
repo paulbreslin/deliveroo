@@ -6,9 +6,9 @@ import './restaurantsList.css';
 
 const RestaurantsList = ({restaurantsList}) => {
 	restaurantsList = JSON.parse(restaurantsList);
-	const restaurantElement = restaurantsList.map( restaurant => {
+	const restaurantElement = restaurantsList.map( (restaurant, index) => {
 		return (
-			<div className="restaurant-item">
+			<div className="restaurant-item" key={index}>
 				<span className="restaurant-name">{restaurant.name}</span>
 				<div className="restaurant-info">
 					<span className="restaurant-type">{restaurant.type}</span>
